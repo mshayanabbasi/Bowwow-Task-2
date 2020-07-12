@@ -376,7 +376,11 @@ section img {
   align-items: center;
 }
 
-@media 
+@media (max-width: 598px) {
+  .pet-pic-section-down-img-1 {
+    margin-bottom: 20px;
+  }
+}
 
 .pet-pic-section-down-img-1 h3 {
   color: rgb(107, 52, 12);
@@ -726,4 +730,19 @@ input {
     background: rgb(112, 88, 43);
     text-align: center;
     color: #fff;
+}
+
+.nutro {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.input-field i {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
 }
