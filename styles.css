@@ -566,9 +566,8 @@ section img {
 }
 
 .our-blogs {
-  margin-top: 20px;
-  width: 1000px;
-  height: 420px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -577,14 +576,16 @@ section img {
 }
 
 .our-blogs-item {
-  /* margin-top: 20px; */
+  margin-top: 20px;
   display: flex;
   width: 300px;
   height: 400px;
-  
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   margin-right: 20px;
+  margin-left: 10px;
 }
-
 
 .our-blogs-item-heading {
   padding-top: 30px;
@@ -799,6 +800,6 @@ input[type="email"] {
   font-size: 25px;
   text-align: center;
   margin-top: -32px;
-  color: #fff;
+  color: white;
   transform: rotate(45deg); 
 }
