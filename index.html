@@ -31,17 +31,17 @@
         </label>
         <img class="logo" src="images/icon.png" />
         <ul>
-            <li><a class="nav-active" href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="nav-btn nav-active" href="#">Home</a></li>
+            <li><a class="nav-btn" href="#">Shop</a></li>
+            <li><a class="nav-btn" href="#">Blog</a></li>
+            <li><a class="nav-btn" href="#">About</a></li>
+            <li><a class="nav-btn" href="#">Contact</a></li>
             <li><img class="navbar-img" src="images/10.png" /></li>
             <li><img class="navbar-img" src="images/8.png" /></li>
             <li><img class="navbar-img" src="images/9.png" /></li>
         </ul>
     </nav>
-    <section>
+    <section id="home">
         <div class="img-header">
             <div class="social-links">
                 <div class="line"></div>
@@ -53,7 +53,7 @@
         </div>
 
     </section>
-    <section class="category-section">
+    <section id="shop" class="category-section">
         <div class="category-heading">
             <h4>Shop By</h4>
             <h1>Category</h1>
@@ -137,7 +137,7 @@
                                         <h3>$405</h3>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 clearfix d-none d-md-block">
                                     <div class="featured-products-item">
                                         <div class="container-featured">
                                             <img src="images/15.png" class="dog-collar" />
@@ -182,7 +182,7 @@
                                             <h3>$405</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 clearfix d-none d-md-block">
                                         <div class="featured-products-item">
                                             <div class="container-featured">
                                                 <img src="images/15.png" class="dog-collar" />
@@ -276,7 +276,7 @@
             </div>
         </div>
     </section>
-    <section class="blog-section">
+    <section id="blog" class="blog-section">
         <div class="blog-heading">
             <h4>Latest News</h4>
             <h1>From Our Blogs</h1>
@@ -285,10 +285,6 @@
             <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
                 <ol class="carousel-indicators" id="carousel-indicator-number">
                     <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
                 </ol>
@@ -411,7 +407,7 @@
                 </div>
             </div>
     </section>
-    <section class="shipping-section">
+    <section id="about" class="shipping-section">
         <div class="shipping-blog">
             <div class="shipping-blog-item">
                 <img class="free-shipping" src="images/28.png" />
@@ -434,20 +430,10 @@
 
         </div>
     </section>
-    <!-- Footer -->
-    <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark">
-
-
-        <!-- Footer Links -->
         <div class="container text-center text-md-left mt-5">
-
-            <!-- Grid row -->
             <div class="row mt-3">
-                <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-                    <!-- Content -->
                     <img class="mb-3" src="images/icon.png" />
                     <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
                         consectetur
@@ -457,127 +443,55 @@
                         <i class="fa fa-location-arrow" aria-hidden="true"></i>
                     </div>
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <!-- Links -->
                     <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Legal</h6>
                     <hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
                     <p>
-                        Privacy Policy
+                        <a id="paragraph-1" href="#">Privacy Policy</a>
                     </p>
                     <p>
-                        Terms & Conditions
+                        <a id="paragraph-1" href="#">Terms & Conditions</a>
                     </p>
                     <p>
-                        Refund & Cancellation
+                        <a id="paragraph-1" href="#">Refund & Cancellation</a>
                     </p>
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <!-- Links -->
                     <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Useful links</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
                     <p>
-                        Home
+                        <a id="paragraph-1" href="#home">Home</a>
                     </p>
                     <p>
-                        Shop
+                        <a id="paragraph-1" href="#shop">Shop</a>
                     </p>
                     <p>
-                        Blog
+                        <a id="paragraph-1" href="#blog">Blog</a>
                     </p>
                     <p>
-                        About
+                        <a id="paragraph-1" href="#about">About</a>
                     </p>
-
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                    <!-- Links -->
                     <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Contact</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
                     <p>
-                        <i id="footer-item-i" class="fa fa-map-marker"></i>A 109-9 Yaseenabad karachi</p>
+                        <i id="footer-item-i" class="fa fa-map-marker"></i><a id="paragraph-1" href="#">A 109-9 Yaseenabad karachi</a></p>
                     <p>
-                        <i id="footer-item-i" class="fa fa-phone"></i>+91-1234567890</p>
+                        <i id="footer-item-i" class="fa fa-phone"></i><a id="paragraph-1" href="#">+91-1234567890</a></p>
                     <p>
-                        <i id="footer-item-i" class="fa fa-envelope"></i>info@bowwow.com</p>
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-    <section class="footer">
-
-        <!-- <div class="footer-section">
-            <div class="footer-items">
-                <div class="footer-section-left-img">
-                    <img src="images/icon.png" />
-                </div>
-                <div class="footer-section-left-para-1">
-                    <p>Bowwow.com is India's first and largest online pet store catering from year 2002 to dogs, cats,
-                        birds, fishes and all your small companies</p>
-                </div>
-                <div class="footer-section-left-para-2">
-                    <p>Get weekly dose of exciting news & products</p>
-                </div>
-                <div class="input-field">
-                    <input type="email" placeholder="Enter Your Email Address" />
-                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        <i id="footer-item-i" class="fa fa-envelope"></i><a id="paragraph-1" href="#">info@bowwow.com</a></p>
                 </div>
             </div>
-            <div class="footer-items">
-                <h2>Legal</h2>
-                <div class="legal-border"></div>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                    <li>Refund & Cancellation</li>
-                </ul>
-            </div>
-            <div class="footer-items">
-                <h2>Usefull Links</h2>
-                <div class="usefull-border"></div>
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Blog</li>
-                    <li>About</li>
-                </ul>
-            </div>
-            <div class="footer-items">
-                <h2>Contact</h2>
-                <div class="contact-border"></div>
-                <ul>
-                    <li><i class="fa fa-map-marker"></i>A 109-9 Yaseenabad karachi</li>
-                    <li><i class="fa fa-phone"></i>+91-1234567890</li>
-                    <li><i class="fa fa-envelope"></i>info@bowwow.com</li>
-                </ul>
-            </div> -->
         </div>
         <div class="footer-bottom">
             @ 2019 BowWow. All Rights Reserved
         </div>
+    </footer>
+
     </section>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>

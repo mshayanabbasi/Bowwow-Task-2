@@ -58,7 +58,11 @@ img.logo {
     width: 120px;
   }
 }
-
+@media (max-width: 1028px) {
+  .line {
+    width: 100px;
+  }
+}
 @media (max-width: 1118px) {
   .line {
     width: 130px;
@@ -69,6 +73,52 @@ img.logo {
     width: 100px;
   }
 }
+
+@media (max-width: 1024px) {
+  .line {
+    width: 100px;
+    margin-left: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .line {
+    width: 50px;
+    margin-left: 580px;
+  }
+}
+
+@media (max-width: 414px) {
+  .line {
+    width: 50px;
+    margin-left: 210px;
+  }
+}
+@media (max-width: 411px) {
+  .line {
+    width: 50px;
+    margin-left: 210px;
+  }
+}
+@media (max-width: 375px) {
+  .line {
+    width: 50px;
+    margin-left: 190px;
+  }
+}
+@media (max-width: 360px) {
+  .line {
+    width: 50px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 320px) {
+  .line {
+    width: 50px;
+    margin-left: 135px;
+  }
+}
+
 .circle-icon-facebook {
   margin-left: 1060px;
   margin-right: 10px;
@@ -95,6 +145,47 @@ img.logo {
     margin-left: 910px;
   }
 }
+@media (max-width: 1024px) {
+  .circle-icon-facebook {
+    margin-left: 875px;
+  }
+}
+@media (max-width: 768px) {
+  .circle-icon-facebook {
+    margin-left: 635px;
+  }
+}
+@media (max-width: 414px) {
+  .circle-icon-facebook {
+    margin-left: 275px;
+  }
+}
+
+@media (max-width: 411px) {
+  .circle-icon-facebook {
+    margin-left: 275px;
+  }
+}
+
+@media (max-width: 375px) {
+  .circle-icon-facebook {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .circle-icon-facebook {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .circle-icon-facebook {
+    margin-left: 190px;
+  }
+}
+
+
 
 .circle-icon-twitter {
   border-radius: 100%;
@@ -125,19 +216,20 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(110, 26, 26);
+  color: black;
   font-size: 17px;
   padding: 5px 7px;
-  border-radius: 15px 15px 15px;
 }
-a.nav-active,
-a:hover {
-  background: rgb(107, 52, 12);
+.nav-active,
+.nav-btn:hover {
+  border-radius: 15px 15px 15px;
+  text-decoration: none;
+  background: #5a3e1d;
   color: white;
 }
 .checkbtn {
   font-size: 30px;
-  color: rgb(107, 52, 12);
+  color: #5a3e1d;
   float: right;
   line-height: 80px;
   margin-right: 50px;
@@ -175,9 +267,9 @@ a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover,
-  a.nav-active {
-    background: rgb(112, 88, 43);
+  .nav-btn:hover,
+  .nav-active {
+    background: #5a3e1d;
   }
   #check:checked ~ ul {
     left: 0;
@@ -869,8 +961,6 @@ input[type="email"] {
   }
 }
 
-
-
 #carousel-indicator-number li {
   width: 10px;
   height: 10px;
@@ -881,9 +971,12 @@ input[type="email"] {
   opacity: 1;
 }
 
-#carousel-indicator-number li:active,
-li:hover {
-  background-color: #5d3d1c;
+#carousel-indicator-number .active {
+  background-color: #5a3e1d;
+}
+
+#carousel-indicator-number li:hover {
+  background-color: #5a3e1d;
 }
 
 #footer-item-h6 {
@@ -896,5 +989,9 @@ hr {
 
 #footer-item-i {
   color: #5d3d1c;
-  margin-right: 9px;
+  margin-right: 5px;
+}
+#paragraph-1  {
+  text-decoration: none;
+  color: #000;
 }
