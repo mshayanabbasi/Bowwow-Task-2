@@ -9,6 +9,18 @@
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script> -->
+
+
+
+
+
 </head>
 
 <body>
@@ -19,7 +31,7 @@
         </label>
         <img class="logo" src="images/icon.png" />
         <ul>
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="nav-active" href="#">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">About</a></li>
@@ -31,12 +43,15 @@
     </nav>
     <section>
         <div class="img-header">
-            <div class="line"></div>
-            <i class="fa fa-facebook circle-icon-facebook"></i>
-            <i class="fa fa-twitter circle-icon-twitter"></i>
-            <i class="fa fa-instagram circle-icon-instagram"></i>
+            <div class="social-links">
+                <div class="line"></div>
+                <i class="fa fa-facebook circle-icon-facebook"></i>
+                <i class="fa fa-twitter circle-icon-twitter"></i>
+                <i class="fa fa-instagram circle-icon-instagram"></i>
+            </div>
+
         </div>
-        
+
     </section>
     <section class="category-section">
         <div class="category-heading">
@@ -87,70 +102,109 @@
                 <h4>Most Popular</h4>
                 <h1>Featured Products</h1>
             </div>
-            <div class="featured-products">
-                <div class="featured-products-item">
-                    <div class="container-featured">
-                        <img class="pedigree" src="images/12.png" />
+            <div class="container">
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="featured-products-item">
+                                        <div class="container-featured">
+                                            <img src="images/12.png" class="pedigree" />
+                                        </div>
+                                        <h4>Dog Food</h4>
+                                        <img src="images/price-tag.png" class="featured-products-item-img" />
+                                        <h3>$305</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="featured-products-item">
+                                        <div class="container-featured">
+                                            <img src="images/13.png" class="fresh-health" />
+                                        </div>
+                                        <h4>Dog Breath Drops</h4>
+                                        <img src="images/price-tag.png" class="featured-products-item-img" />
+                                        <h3>$200</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="featured-products-item">
+                                        <div class="container-featured">
+                                            <img src="images/14.png" class="dog-tshirt" />
+                                        </div>
+                                        <h4>Dog T-Shirt</h4>
+                                        <img src="images/price-tag.png" class="featured-products-item-img" />
+                                        <h3>$405</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="featured-products-item">
+                                        <div class="container-featured">
+                                            <img src="images/15.png" class="dog-collar" />
+                                        </div>
+                                        <h4>Dog Collar</h4>
+                                        <img src="images/price-tag.png" class="featured-products-item-img" />
+                                        <h3>$500</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="featured-products-item">
+                                            <div class="container-featured">
+                                                <img src="images/12.png" class="pedigree" />
+                                            </div>
+                                            <h4>Dog Food</h4>
+                                            <img src="images/price-tag.png" class="featured-products-item-img" />
+                                            <h3>$305</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 clearfix d-none d-md-block">
+                                        <div class="featured-products-item">
+                                            <div class="container-featured">
+                                                <img src="images/13.png" class="fresh-health" />
+                                            </div>
+                                            <h4>Dog Breath Drops</h4>
+                                            <img src="images/price-tag.png" class="featured-products-item-img" />
+                                            <h3>$200</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 clearfix d-none d-md-block">
+                                        <div class="featured-products-item">
+                                            <div class="container-featured">
+                                                <img src="images/14.png" class="dog-tshirt" />
+                                            </div>
+                                            <h4>Dog T-Shirt</h4>
+                                            <img src="images/price-tag.png" class="featured-products-item-img" />
+                                            <h3>$405</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="featured-products-item">
+                                            <div class="container-featured">
+                                                <img src="images/15.png" class="dog-collar" />
+                                            </div>
+                                            <h4>Dog Collar</h4>
+                                            <img src="images/price-tag.png" class="featured-products-item-img" />
+                                            <h3>$500</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="featured-products-item-heading">
-                        <h4>Dog Food</h4>
+                    <div class="featured-img">
+                        <a href="#multi-item-example" data-slide="prev"> <i class="fa fa-caret-left"
+                                style="font-size:48px;color:rgb(151, 146, 146)"></i></a>
+
+                        <div class="featured-img-line">
+                        </div>
+                        <a href="#multi-item-example" data-slide="next"><i class="fa fa-caret-right"
+                                style="font-size:48px;color:white"></i></a>
                     </div>
-                    <div class="featured-products-item-img">
-                        <img src="images/price-tag.png" />
-                    </div>
-                    <div class="featured-products-item-text">
-                        <h3>$305</h3>
-                    </div>
-                </div>
-                <div class="featured-products-item">
-                    <div class="container-featured">
-                        <img class="fresh-health" src="images/13.png" />
-                    </div>
-                    <div class="featured-products-item-heading">
-                        <h4>Dog Breath Drops</h4>
-                    </div>
-                    <div class="featured-products-item-img">
-                        <img src="images/price-tag.png" />
-                    </div>
-                    <div class="featured-products-item-text">
-                        <h3>$200</h3>
-                    </div>
-                </div>
-                <div class="featured-products-item">
-                    <div class="container-featured">
-                        <img class="dog-tshirt" src="images/14.png" />
-                    </div>
-                    <div class="featured-products-item-heading">
-                        <h4>Dog T- Shirt</h4>
-                    </div>
-                    <div class="featured-products-item-img">
-                        <img src="images/price-tag.png" />
-                    </div>
-                    <div class="featured-products-item-text">
-                        <h3>$405</h3>
-                    </div>
-                </div>
-                <div class="featured-products-item">
-                    <div class="container-featured">
-                        <img class="dog-collar" src="images/15.png" />
-                    </div>
-                    <div class="featured-products-item-heading">
-                        <h4>Dog Collar</h4>
-                    </div>
-                    <div class="featured-products-item-img">
-                        <img src="images/price-tag.png" />
-                    </div>
-                    <div class="featured-products-item-text">
-                        <h3>$500</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="featured-img">
-                <i class="fa fa-caret-left" style="font-size:48px;color:rgb(151, 146, 146)"></i>
-                <div class="featured-img-line">
-                </div>
-                <i class="fa fa-caret-right" style="font-size:48px;color:white"></i>
-            </div>
         </section>
     </div>
     <section class="pet-pic-section">
@@ -175,7 +229,7 @@
                     <img src="images/dog4.png" />
                 </div>
             </div>
-            
+
         </div>
     </section>
     <section class="brands-section">
@@ -227,58 +281,135 @@
             <h4>Latest News</h4>
             <h1>From Our Blogs</h1>
         </div>
-        <div class="our-blogs">
-            <div class="our-blogs-item">
-                <div class="container-blogs">
-                    <img src="images/image1.jpg" />
-                </div>
-                <div class="our-blogs-item-heading">
-                    <h2>Train Your Dogs</h2>
-                </div>
-                <div class="our-blogs-item-para">
-                    <p>Is your dog easily distracted? Does he spend your entire walk lunging at...</p>
-                </div>
-                <div class="our-blogs-item-icon">
-                    <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+        <div class="container">
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                <ol class="carousel-indicators" id="carousel-indicator-number">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image1.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Train Your Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image2.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Care Of Your Dogs</h4>
+                                        <p class="card-text">
+                                            Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image3.jpg" alt="Card image cap">
+                                    <div class="card-body" id="card-blog">
+                                        <h4 class="card-title">Electric Fence Of Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image1.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Train Your Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image2.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Care Of Your Dogs</h4>
+                                        <p class="card-text">
+                                            Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image3.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Electric Fence Of Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image1.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Train Your Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image2.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Care Of Your Dogs</h4>
+                                        <p class="card-text">
+                                            Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div style="border: none;" class="card mb-2">
+                                    <img class="card-img-top" src="images/image3.jpg" alt="Card image cap">
+                                    <div id="card-blog" class="card-body">
+                                        <h4 class="card-title">Electric Fence Of Dogs</h4>
+                                        <p class="card-text">Is your dog easily distracted? Does he spend your entire
+                                            walk lunging at...</p>
+                                        <h5>Full Article <i class="fa fa-angle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="our-blogs-item">
-                <div class="container-blogs">
-                    <img src="images/image2.jpg" />
-                </div>
-                <div class="our-blogs-item-heading">
-                    <h2>Care Of Your Dogs</h2>
-                </div>
-                <div class="our-blogs-item-para">
-                    <p>Is your dog easily distracted? Does he spend your entire walk lunging at...</p>
-                </div>
-                <div class="our-blogs-item-icon">
-                    <h5>Full Article <i class="fa fa-angle-right"></i></h5>
-                </div>
-            </div>
-            <div class="our-blogs-item">
-                <div class="container-blogs">
-                    <img src="images/image3.jpg" />
-                </div>
-                <div class="our-blogs-item-heading">
-                    <h2>Electric Fence Of Dogs</h2>
-                </div>
-                <div class="our-blogs-item-para">
-                    <p>Is your dog easily distracted? Does he spend your entire walk lunging at...</p>
-                </div>
-                <div class="our-blogs-item-icon">
-                    <h5>Full Article <i class="fa fa-angle-right"></i></h5>
-                </div>
-            </div>
-        </div>
-        <div class="span-dot">
-            <span class="color-dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
     </section>
     <section class="shipping-section">
         <div class="shipping-blog">
@@ -303,8 +434,101 @@
 
         </div>
     </section>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <img class="mb-3" src="images/icon.png" />
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter Your Email Address" />
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Legal</h6>
+                    <hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        Privacy Policy
+                    </p>
+                    <p>
+                        Terms & Conditions
+                    </p>
+                    <p>
+                        Refund & Cancellation
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        Home
+                    </p>
+                    <p>
+                        Shop
+                    </p>
+                    <p>
+                        Blog
+                    </p>
+                    <p>
+                        About
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 id="footer-item-h6" class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        <i id="footer-item-i" class="fa fa-map-marker"></i>A 109-9 Yaseenabad karachi</p>
+                    <p>
+                        <i id="footer-item-i" class="fa fa-phone"></i>+91-1234567890</p>
+                    <p>
+                        <i id="footer-item-i" class="fa fa-envelope"></i>info@bowwow.com</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
     <section class="footer">
-        <div class="footer-section">
+
+        <!-- <div class="footer-section">
             <div class="footer-items">
                 <div class="footer-section-left-img">
                     <img src="images/icon.png" />
@@ -348,12 +572,17 @@
                     <li><i class="fa fa-phone"></i>+91-1234567890</li>
                     <li><i class="fa fa-envelope"></i>info@bowwow.com</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="footer-bottom">
             @ 2019 BowWow. All Rights Reserved
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
